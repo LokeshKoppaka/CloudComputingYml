@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phpApacheDeployment
+  labels:
+    app: phpApache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phpApache
+  template:
+    metadata:
+      labels:
+        app: phpApache
+    spec:
+      containers:
+      - name: phpApacheContainer
+       image: k8s.gcr.io/hpa-example
+       ports:
+       - containerPort: 8081
