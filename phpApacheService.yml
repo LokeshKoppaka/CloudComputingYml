@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: phpapacheservice
+spec:
+  selector:
+    app: phpApache
+  ports:
+  - port: 80
+  type: NodePort
