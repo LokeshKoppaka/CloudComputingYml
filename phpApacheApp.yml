@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: phpApacheContainer
-       image: k8s.gcr.io/hpa-example
-       ports:
-       - containerPort: 8081
+        image: k8s.gcr.io/hpa-example
+        ports:
+        - containerPort: 8081
