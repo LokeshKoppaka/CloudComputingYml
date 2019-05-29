@@ -15,7 +15,7 @@ spec:
         app: HelloWorld
     spec:
       containers:
-      - name: phpApacheContainer
+      - name: helloworldcontainer
         image: k8s.gcr.io/hpa-example
         resources:
           requests:
