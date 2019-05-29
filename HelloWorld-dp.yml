@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: LearnKubeOne
+  labels:
+    app: HelloWorld
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: HelloWorld
+  template:
+    metadata:
+      labels:
+        app: HelloWorld
+    spec:
+      containers:
+      - name: phpApacheContainer
+        image: k8s.gcr.io/hpa-example
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
+        ports:
+        - containerPort: 8081
