@@ -4,8 +4,8 @@ metadata:
   name: helloworld-scaler
 spec:
   scaleTargetRef:
-    kind: ReplicaSet
-    name: learnkubeone-54d75bbc7c
-  minReplicas: 2
-  maxReplicas: 6
+    kind: Deployment
+    name: learnkubeone
+  minReplicas: 1
+  maxReplicas: 3
   targetCPUUtilizationPercentage: 30
