@@ -5,7 +5,7 @@ metadata:
 spec:
   scaleTargetRef:
     kind: ReplicaSet
-    app: HelloWorld
+    name: learnkubeone-54d75bbc7c
   minReplicas: 2
   maxReplicas: 6
   targetCPUUtilizationPercentage: 1
