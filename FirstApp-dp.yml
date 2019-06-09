@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: firstappcontainer
-        image: firstapp
+        image: firstapp:latest
         resources:
           requests:
             cpu: 50m
