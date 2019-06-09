@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - image: firstapp:latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: firstappcontainer
         resources:
           requests:
