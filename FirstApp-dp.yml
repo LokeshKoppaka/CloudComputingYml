@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstappdeploy
+  labels:
+    app: FirstWebApp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: FirstWebApp
+  template:
+    metadata:
+      labels:
+        app: FirstWebApp
+    spec:
+      containers:
+      - name: firstappcontainer
+        image: firstapp
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
+        ports:
+        - containerPort: 8085
