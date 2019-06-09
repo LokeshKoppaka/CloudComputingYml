@@ -15,9 +15,9 @@ spec:
         app: FirstWebApp
     spec:
       containers:
-      - name: firstappcontainer
       - image: firstapp:latest
         imagePullPolicy: Always
+        name: firstappcontainer
         resources:
           requests:
             cpu: 50m
