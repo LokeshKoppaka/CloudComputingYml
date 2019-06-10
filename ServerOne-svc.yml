@@ -4,7 +4,7 @@ metadata:
   name: servicetestlb
 spec:
   selector:
-    app: ServerOne
+    app: serverOne
   ports:
   - port: 85
     targetPort: 85
