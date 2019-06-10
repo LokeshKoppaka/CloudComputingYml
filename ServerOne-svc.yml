@@ -4,7 +4,7 @@ metadata:
   name: servicetestlb
 spec:
   selector:
-    app:servertestone
+    app: servertestone
   ports:
   - port: 87
     targetPort: 8085
