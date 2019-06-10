@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: serveronedeploy
+  labels:
+    app: serverOne
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: serverOne
+  template:
+    metadata:
+      labels:
+        app: serverOne
+    spec:
+      containers:
+      - name: serveronecontainer
+        image: lokeshkoppaka/cloudcomputing.spring2019:firstImage 
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
+        ports:
+        - containerPort: 8085
