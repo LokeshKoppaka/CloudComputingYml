@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: servicethreelb
+spec:
+  selector:
+    app: servertestthree
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
