@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: servertwotestdeploy
+  labels:
+    app: servertesttwo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: servertesttwo
+  template:
+    metadata:
+      labels:
+        app: servertesttwo
+    spec:
+      containers:
+      - name: servertwocontainer
+        image: lokeshkoppaka/cloudcomputing.spring2019:secondImage 
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
+        ports:
+        - containerPort: 80
