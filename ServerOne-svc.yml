@@ -7,5 +7,5 @@ spec:
     app: servertestone
   ports:
   - port: 80
-    targetPort: 81
+    targetPort: 80
   type: NodePort
