@@ -6,6 +6,6 @@ spec:
   selector:
     app: serverOne
   ports:
-  - port: 85
+  - port: 87
     targetPort: 8085
-  type: LoadBalancer
+  type: NodePort
