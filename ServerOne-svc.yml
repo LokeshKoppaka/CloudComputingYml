@@ -7,4 +7,5 @@ spec:
     app: ServerOne
   ports:
   - port: 80
+    targetPort: 85
   type: LoadBalancer
