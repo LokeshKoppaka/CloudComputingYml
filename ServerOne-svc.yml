@@ -6,6 +6,6 @@ spec:
   selector:
     app: servertestone
   ports:
-  - port: 87
-    targetPort: 8085
+  - port: 80
+    targetPort: 81
   type: NodePort
