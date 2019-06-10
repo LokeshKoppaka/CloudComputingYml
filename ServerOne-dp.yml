@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: serveronedeploy
   labels:
-    app: serverOne
+    app:servertestone
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: serverOne
+      app:servertestone
   template:
     metadata:
       labels:
-        app: serverOne
+        app:servertestone
     spec:
       containers:
       - name: serveronecontainer
